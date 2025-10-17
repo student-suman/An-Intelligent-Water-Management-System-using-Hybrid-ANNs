@@ -6,7 +6,7 @@ import joblib
 from model import create_model
 
 def train_irrigation_model(dataset_path='irrigation_dataset.csv', 
-                          model_output_path='irrigation_model.h5',
+                          model_output_path='irrigation_model.keras',
                           scaler_output_path='scaler.pkl',
                           epochs=50,
                           test_size=0.2,

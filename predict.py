@@ -1,9 +1,10 @@
 import numpy as np
 import joblib
 from tensorflow import keras
+from model import HybridSwishReLU
 
 def predict_irrigation(soil_moisture, temperature, humidity, crop_type,
-                      model_path='irrigation_model.h5',
+                      model_path='irrigation_model.keras',
                       scaler_path='scaler.pkl'):
     """
     Predict the optimal irrigation duration for given environmental conditions.
@@ -30,7 +31,7 @@ def predict_irrigation(soil_moisture, temperature, humidity, crop_type,
     
     model = keras.models.load_model(
         model_path,
-        custom_objects={'HybridSwishReLU': keras.layers.Layer}
+        custom_objects={'HybridSwishReLU': HybridSwishReLU}
     )
     
     scaler = joblib.load(scaler_path)

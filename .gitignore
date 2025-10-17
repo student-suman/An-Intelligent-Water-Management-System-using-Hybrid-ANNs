@@ -101,5 +101,6 @@ dmypy.json
 .DS_Store
 
 *.h5
+*.keras
 *.pkl
 irrigation_dataset.csv
