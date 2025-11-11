@@ -1,0 +1,6 @@
+Timestamp,Soil Moisture,Temperature,Humidity,Crop Type,Predicted Duration (min)
+2025-10-20 06:22:49,35,23,72,Corn,30.63
+2025-10-20 06:33:01,35,23,72,Wheat,33.04
+2025-10-20 06:51:28,35,23,72,Wheat,33.04
+2025-10-20 07:33:22,35,25,64,Wheat,34.10
+2025-11-11 19:48:15,35,25,76,Rice,32.95
